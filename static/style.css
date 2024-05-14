@@ -1,0 +1,48 @@
+.custom-navbar {
+    background-color: #FFFFFF;
+    padding: 20px 0;
+}
+
+.custom-navbar a {
+    color: black; /* Set text color to black for navbar links */
+}
+
+.navbar-brand {
+    font-size: 24px;
+}
+
+.flash-message {
+    position: fixed;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 20px; /* Decreased font size for smaller screens */
+    }
+    .flash-message {
+        padding: 15px 20px; /* Decreased padding for smaller screens */
+    }
+    .custom-navbar {
+        padding: 10px 0; /* Adjusted padding for smaller screens */
+    }
+}
+
+/* Background image */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Set text color */
+    font-family: Arial, sans-serif;
+}
